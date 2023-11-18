@@ -24,7 +24,7 @@ function Hero() {
     
     </div>
     <div className="feature-content2" id='featurecontent2'>
-        <h1>Join easily without dealing <br /> with unnecessary forms</h1>
+        <h1>Join easily without dealing <br /> with Unnecessary Registration</h1>
         <div className='whatsapp'>
         <a className='whatsapplink' href="https://wa.me/918305523140"><img src={whatsapp} alt="" />Chat with us</a>
     </div>
