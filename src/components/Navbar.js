@@ -1,10 +1,11 @@
 import React from 'react'
 import whatsapp from '../images/WhatsApp.svg'
 import navicon from '../images/navigation-bar.png'
+import logo from '../images/main-yellow.png'
 function Navbar() {
   return (
     <div className="navbar">
-   <div className="logo">Beiyo</div>
+   <div className="logo"><img src={logo} alt="" /></div>
     <div>
        <ul className='navbar-content'>
      
