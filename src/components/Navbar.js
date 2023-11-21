@@ -1,5 +1,6 @@
 import React from 'react'
 import whatsapp from '../images/WhatsApp.svg'
+import navicon from '../images/navigation-bar.png'
 function Navbar() {
   return (
     <div className="navbar">
@@ -17,7 +18,11 @@ function Navbar() {
     <div className='whatsapp'>
         <a className='whatsapplink' href="https://wa.me/918305523140"><img src={whatsapp} alt="" />Chat with us</a>
     </div>
+    <div className="navicon">
+    <img src={navicon} alt="" />
+  </div>
  </div>
+
   )
 }
 
