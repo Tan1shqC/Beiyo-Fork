@@ -85,6 +85,10 @@ body{
   color: white;
   text-decoration: none;
 }
+.navicon{
+  display: none;
+}
+
 .main{
   height: 80vh;
   width: 100%;
@@ -141,7 +145,7 @@ margin: 0px;
   padding-bottom: 0px;
   align-items: center;
   gap: 15vh;
-  
+  flex-wrap: wrap-reverse;
 }
 .contentdiv{
   text-align: left;
@@ -226,6 +230,7 @@ padding: 0px;
   justify-content: space-around;
   align-items: center;
   padding: 0px;
+  flex-wrap: wrap;
 }
 .footercontent img{
   height: 20%;
@@ -252,3 +257,76 @@ padding: 0px;
   color: rgb(169, 168, 168);
   margin-left: 20vh;
 }
+@media (max-width: 412px){ 
+  .main{
+    height: 55vh;
+    width: 100vw;
+  }
+  .main h1{
+    font-size: 8.5vw;
+  }
+  .main p{
+    font-size: 3vw;
+  }
+  .feature-content1{
+    gap: 10vw;
+  }
+ .contentdiv{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ }
+ .imgdiv{
+  height: 90vw;
+  width: 90vw;
+ }
+ .imgdiv1{
+  height: 90vw;
+  width: 90vw;
+ }
+ .contentdiv h1{
+  font-size: 7vw;
+ 
+ }
+ .feature-content3 h1{
+  font-size: 8vw;
+  margin: 0px;
+  padding: 0px;
+ }
+ .feature-content3 .paradiv{
+  width: 100%;
+ }
+ .feature-content3 button{
+  width: 300px;
+  height: 30vw;
+ }
+ .footercontent img{
+  width: 30%;
+  height: 30%;
+ }
+ .footer h3{
+  margin-left:0px;
+ }
+ .navbar .whatsapp{
+  display: none;
+ }
+ .navbar-content{
+  display: none;
+ }
+ .navbar{
+  justify-content: space-around;
+  width: 100vw;
+  position: fixed;
+ }
+ .navicon{
+  display: block;
+  height: 4vh;
+  width: 4vh;
+ }
+ .navicon img{
+  height: 4vh;
+  width: 4vh;
+ }
+} 
