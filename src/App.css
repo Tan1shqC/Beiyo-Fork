@@ -343,4 +343,7 @@ padding: 0px;
   padding-left: 0;
   padding-right: 0;
  }
+ .feature-content2 h1{
+  font-size: 4vh;
+ }
 } 
