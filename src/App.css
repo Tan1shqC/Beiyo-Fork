@@ -25,15 +25,15 @@ body{
   width: 100%;
   top: 0;
   z-index: 1000; 
-  background-color: #f7fef7;
+  /* background-color: #f7fef7; */
+  background-color: #232F3F;
   
-  filter: brightness(100px);
  
 }
-.logo{
-  color: black;
-  font-size: x-large ;
-  text-transform: uppercase;
+.logo img{
+  height: 25vh;
+  width: 25vh;
+  margin-top: 1vh;
 }
 .navbar-content{
   display: flex;
@@ -41,19 +41,21 @@ body{
   list-style: none;
 }
 .nav-item{
-  position: relative;
-  transition: 0.1s ease-in-out;
+  
   font-size: 2.5vh;
 }
 
 .nav-item a{
-  color: black;
+  transition: 2s ease-in-out;
+  /* color: black; */
+  color: white;
   text-decoration: none;
   word-spacing: 2%;
 }
 .nav-item a:hover{
  text-decoration: underline;
 }
+
 .whatsapp{
   background-color: #25d366;
   color: #ffffff;
@@ -62,8 +64,8 @@ body{
   font-size: 3vh;
   font-weight: bold;
   outline: none;
-  width: 150px;
-  height: 50px;
+  width: 20vh;
+  height: 7vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -112,14 +114,14 @@ margin: 0px;
   line-height: 0vh;
 } 
 .explore{
-  height: 60px;
-  width: 150px;
+  height: 10vh;
+  width: 20vh;
   border-radius: 100px;
   outline: none;
   background-color: black;
   color: white;
   font-size: 2.5vh;
-  margin-top: 20px;
+  margin-top: 6vh;
   font-family: 'Gilda Display', serif;
   transition: 0.6s ease-in-out;
 }
@@ -153,7 +155,7 @@ margin: 0px;
 .contentdiv h1{
   font-size: 7vh;
   font-weight: lighter;
-  line-height: 0.5px;
+  line-height: 0.5vh;
   text-align: left;
 }
 .imgdiv{
@@ -214,7 +216,7 @@ margin: 0px;
   color: black;
   background-color: rgb(255, 255, 255);
   height: 15vh;
-  width: 400px;
+  width: 50vh;
   border-radius: 100px;
   font-size: 6vh;
   cursor: pointer;
@@ -259,6 +261,11 @@ padding: 0px;
   margin-left: 20vh;
 }
 @media (max-width: 412px){ 
+  .logo img{
+    height: 40vw;
+    width: 15vh;
+    margin-top: 3vw;
+  }
   .main{
     height: 55vh;
     width: 100vw;
@@ -300,8 +307,8 @@ padding: 0px;
   width: 100%;
  }
  .feature-content3 button{
-  width: 300px;
-  height: 30vw;
+  width: 40vh;
+  height: 31vw;
  }
  .footercontent img{
   width: 30%;
@@ -325,9 +332,15 @@ padding: 0px;
   display: block;
   height: 4vh;
   width: 4vh;
+
  }
  .navicon img{
   height: 4vh;
   width: 4vh;
+  filter: brightness(100);
+ }
+ .paradiv{
+  padding-left: 0;
+  padding-right: 0;
  }
 } 
