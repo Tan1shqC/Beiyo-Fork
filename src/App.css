@@ -360,7 +360,11 @@ padding: 0px;
   
   border-bottom: 5px #232F3F solid;
 }
+#openbtn{
+  background-color: transparent;
+}
 #closebtn{
+  background-color: transparent;
   display: none;
 }
 .navbar-content-mobile{
