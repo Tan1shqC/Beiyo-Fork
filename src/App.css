@@ -207,8 +207,8 @@ margin: 0px;
   margin: 0px;
 }
 .paradiv{
-  padding-left: 40vh;
-  padding-right: 40vh;
+  padding-left: 0vh;
+  padding-right: 0vh;
   font-size: small;
   text-align: center;
 }
@@ -347,3 +347,40 @@ padding: 0px;
   font-size: 4vh;
  }
 } 
+
+.sidenav{
+  display: none;
+  width: 100vw;
+  height: 50vh;
+  align-items: center;
+  background-color: #EFF1EF;
+  justify-content: end;
+  z-index: 1;
+  flex-direction: column;
+  
+  border-bottom: 5px #232F3F solid;
+}
+#closebtn{
+  display: none;
+}
+.navbar-content-mobile{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  flex-direction: column;
+}
+.nav-item-mobile{
+  
+  font-size: 2.5vh;
+}
+
+.nav-item-mobile a{
+  transition: 2s ease-in-out;
+  /* color: black; */
+  color: black;
+  text-decoration: none;
+  word-spacing: 2%;
+}
+.nav-item a:hover{
+ text-decoration: underline;
+}
