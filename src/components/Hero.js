@@ -3,7 +3,7 @@ import whatsapp from '../images/WhatsApp.svg'
 function Hero() {
   return (
   <>
-    <div className="main">
+    <div className="main" id='main'>
    <div className="hero-main">
    <h1>Offering Your Perfect</h1>
     <h1>Accommodation Services</h1>
@@ -24,7 +24,7 @@ function Hero() {
     
     </div>
     <div className="feature-content2" id='featurecontent2'>
-        <h1>Join easily without dealing <br /> with Unnecessary Registration</h1>
+        <h1>Join easily without dealing <br /> with unnecessary forms</h1>
         <div className='whatsapp'>
         <a className='whatsapplink' href="https://wa.me/918305523140"><img src={whatsapp} alt="" />Chat with us</a>
     </div>
@@ -44,7 +44,7 @@ function Hero() {
         <p>Looking for a unique living experience as a student? Beiyo also offers communal living options where you can live with other students in a shared space. Enjoy the benefits of a supportive community, shared expenses, and a sociable environment. Explore our commune options and find your perfect fit! </p>
         </div>
         <button>
-            Join Our Community
+            Join Now
         </button>
     </div>
   </div>
