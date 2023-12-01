@@ -2,7 +2,7 @@ import React from 'react'
 import whatsapp from '../images/WhatsApp.svg'
 function Hero() {
   return (
-  <>
+  <div id='hero'>
     <div className="main" id='main'>
    <div className="hero-main">
    <h1>Offering Your Perfect</h1>
@@ -51,7 +51,7 @@ function Hero() {
   <div className="services">
 
   </div>
-  </>
+  </div>
 
 
     

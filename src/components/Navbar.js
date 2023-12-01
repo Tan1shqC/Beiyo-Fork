@@ -26,20 +26,7 @@ function Navbar() {
    <button id='closebtn' onClick={closeNav}> <img src={closeicon} alt="" /></button>
   </div>
   </div>
-  <div id="mySidenav" className="sidenav">
 
-        <ul className='navbar-content-mobile'>
-     
-     <li  className='nav-item-mobile'><a href="">Home</a></li>
-     <li  className='nav-item-mobile'><a href="">Subscribe</a></li>
-     <li  className='nav-item-mobile'><a href="">Hostel</a></li>
-     <li  className='nav-item-mobile'><a href="">List</a></li>
-   
-     </ul>
-     <div className='whatsapp'>
-        <a className='whatsapplink' href="https://wa.me/918305523140"><img src={whatsapp} alt="" />Chat with us</a>
-    </div>
-      </div>
  
 </>
  
@@ -48,15 +35,17 @@ function Navbar() {
 }
 function openNav() {
   document.getElementById("mySidenav").style.display = "flex";
-  document.getElementById("main").style.paddingTop ="0";
+  document.getElementById("hero").style.display ="none";
   document.getElementById("closebtn").style.display = "block";
   document.getElementById("openbtn").style.display = "none";
+  document.getElementById("footer").style.display="none";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.display = "none"; 
-  document.getElementById("main").style.paddingTop = "30vh";
+  document.getElementById("hero").style.display = "block";
   document.getElementById("openbtn").style.display = "block";
   document.getElementById("closebtn").style.display = "none";
+  document.getElementById("footer").style.display="block";
 }
 export default Navbar
