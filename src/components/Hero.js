@@ -43,7 +43,7 @@ function Hero() {
         <div className="paradiv">
         <p>Looking for a unique living experience as a student? Beiyo also offers communal living options where you can live with other students in a shared space. Enjoy the benefits of a supportive community, shared expenses, and a sociable environment. Explore our commune options and find your perfect fit! </p>
         </div>
-        <button>
+        <button className='btnjoin'>
             Join Now
         </button>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import whatsapp from '../images/WhatsApp.svg'
-import navicon from '../images/navigation-bar.png'
+import navicon from '../images/icons8-menu-50.png'
+import closeicon from '../images/icons8-close-50.png'
 import logo from '../images/main-yellow.png'
 function Navbar() {
   return (
@@ -22,7 +23,7 @@ function Navbar() {
     </div>
     <div className="navicon">
    <button id='openbtn' onClick={openNav}> <img src={navicon} alt="" /></button>
-   <button id='closebtn' onClick={closeNav}>Close</button>
+   <button id='closebtn' onClick={closeNav}> <img src={closeicon} alt="" /></button>
   </div>
   </div>
   <div id="mySidenav" className="sidenav">

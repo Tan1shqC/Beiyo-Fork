@@ -28,7 +28,7 @@ export default function Footer() {
                <a href=""> <img src={icon1} alt="" /> </a>
             </div>
         </div>
-        <h3>Copyright © 2023 | All Rights Reserved by Beiyo Pvt Ltd.</h3>
+        <h3>Copyright © 2023  <br /> All Rights Reserved by Beiyo Pvt Ltd.</h3>
         </div>
 
     </>
