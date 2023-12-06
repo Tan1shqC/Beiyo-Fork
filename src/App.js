@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div id="app-container" data-scroll-container>
        
       <Navbar />
       <div id="mySidenav" className="sidenav">
@@ -37,11 +37,11 @@ function App() {
           <a className='whatsapplink' href="https://wa.me/918305523140"><img src={whatsapp} alt="" />Chat with us</a>
         </div>
       </div>
-      <div id="app-container" data-scroll-container>
+     
         <Hero />
         <Footer />
       </div>
-    </>
+   
   );
 }
 
