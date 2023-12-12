@@ -1,12 +1,23 @@
 import React, { useEffect } from 'react';
 import './App.css';
+
+import { BrowserRouter as Router, Routes, Route , Link } from "react-router-dom";
+// import LocomotiveScroll from 'locomotive-scroll';
+
 import LocomotiveScroll from 'locomotive-scroll';
+
 
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import whatsapp from './images/WhatsApp.svg';
+
+import  Sidenav  from './components/Sidenav';
+import Subscribe from './components/Subscribe';
+import ListProperty from './components/ListProperty';
+import Hostel from './components/Hostel'
+import Joinwaitlist from './components/Joinwaitlist';
 
 function App() {
   useEffect(() => {
@@ -23,26 +34,27 @@ function App() {
   }, []);
 
   return (
+  
+    <Router>
+    
     <div id="app-container" data-scroll-container>
        
-      <Navbar />
-      <div id="mySidenav" className="sidenav">
-        <ul className='navbar-content-mobile'>
-          <li className='nav-item-mobile'><a href="">Home</a></li>
-          <li className='nav-item-mobile'><a href="">Subscribe</a></li>
-          <li className='nav-item-mobile'><a href="">Hostel</a></li>
-          <li className='nav-item-mobile'><a href="">List</a></li>
-        </ul>
-        <div className='whatsapp'>
-          <a className='whatsapplink' href="https://wa.me/918305523140"><img src={whatsapp} alt="" />Chat with us</a>
-        </div>
-      </div>
-     
-        <Hero />
-        <Footer />
-      </div>
-   
-  );
-}
+          <Navbar />
+          <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/subscribe" element={<Subscribe/>} />
+          <Route path="/hostel" element={<Hostel />}/>
+          <Route path="/list" element={<ListProperty />}/>
+          <Route path="/form" element={<Joinwaitlist />}/>
+        </Routes>
+         <Sidenav/>
+         {/* <Hero /> */}
+         <Footer />
+   </div>   
+  
+    </Router>
+
+  )
+  }
 
 export default App;
