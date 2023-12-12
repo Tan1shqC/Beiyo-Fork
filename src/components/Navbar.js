@@ -3,6 +3,10 @@ import whatsapp from '../images/WhatsApp.svg'
 import navicon from '../images/icons8-menu-50.png'
 import closeicon from '../images/icons8-close-50.png'
 import logo from '../images/main-yellow.png'
+import { Link } from 'react-router-dom'
+import Joinwaitlist from './Joinwaitlist'
+
+
 function Navbar() {
   return (
 <>
@@ -11,11 +15,11 @@ function Navbar() {
     <div>
        <ul className='navbar-content'>
      
-       <li  className='nav-item'><a href="">Home</a></li>
-       <li  className='nav-item'><a href="">Subscribe</a></li>
-       <li  className='nav-item'><a href="">Hostel</a></li>
-       <li  className='nav-item'><a href="">List</a></li>
-     
+       <li  className='nav-item'><Link to="/">Home</Link></li>
+       <li  className='nav-item'><Link to="/subscribe">Subscribe</Link></li>
+       <li  className='nav-item'><Link to="/hostel">Hostel</Link></li>
+       <li  className='nav-item'><Link to="/list">List</Link></li>
+       <li  className='nav-item'><Link to="/form">Joinwaitlist</Link></li>
        </ul>
     </div>
     <div className='whatsapp'>
