@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import Joinwaitlist from './Joinwaitlist'
 
 
+
 function Navbar() {
   return (
 <>
@@ -30,26 +31,40 @@ function Navbar() {
    <button id='closebtn' onClick={closeNav}> <img src={closeicon} alt="" /></button>
   </div>
   </div>
-
- 
+   
+  <div id="mySidenav" className="sidenav">
+<ul className='navbar-content-mobile'>
+<li className='nav-item-mobile'><a href="/">Home</a></li>
+<hr />
+<li className='nav-item-mobile'><a href="/subscribe">Subscribe</a></li>
+<hr />
+<li className='nav-item-mobile'><a href="/hostel">Hostel</a></li>
+<hr />
+<li className='nav-item-mobile'><a href="/list">List Your Properties</a></li>
+<hr />
+<li className='nav-item-mobile'><a href="/form">Join our waitlist</a></li>
+<hr />
+</ul>
+<div className='whatsapp'>
+<a className='whatsapplink' href="https://wa.me/918305523140"><img src={whatsapp} alt="" />Chat with us</a>
+</div>
+</div>
 </>
- 
+  
 
   )
 }
-function openNav() {
-  document.getElementById("mySidenav").style.display = "flex";
-  document.getElementById("hero").style.display ="none";
+function openNav(){
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("openbtn").style.display= 'none';
   document.getElementById("closebtn").style.display = "block";
-  document.getElementById("openbtn").style.display = "none";
-  document.getElementById("footer").style.display="none";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("openbtn").style.display= 'block';
+  document.getElementById("closebtn").style.display = "none";
 }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.display = "none"; 
-  document.getElementById("hero").style.display = "block";
-  document.getElementById("openbtn").style.display = "block";
-  document.getElementById("closebtn").style.display = "none";
-  document.getElementById("footer").style.display="block";
-}
 export default Navbar
+//    
+
