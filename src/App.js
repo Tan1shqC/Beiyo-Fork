@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route , Link } from "react-router-dom";
 // import LocomotiveScroll from 'locomotive-scroll';
 
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 
 
 import Hero from './components/Hero';
@@ -13,25 +13,25 @@ import Footer from './components/Footer';
 
 import whatsapp from './images/WhatsApp.svg';
 
-import  Sidenav  from './components/Sidenav';
+
 import Subscribe from './components/Subscribe';
 import ListProperty from './components/ListProperty';
 import Hostel from './components/Hostel'
 import Joinwaitlist from './components/Joinwaitlist';
 
 function App() {
-  useEffect(() => {
-    // Initialize Locomotive Scroll
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('#app-container'),
-      smooth: true,
-    });
+  // useEffect(() => {
+  //   // Initialize Locomotive Scroll
+  //   const scroll = new LocomotiveScroll({
+  //     el: document.querySelector('#app-container'),
+  //     smooth: true,
+  //   });
 
-    // Clean up on component unmount
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
+  //   // Clean up on component unmount
+  //   return () => {
+  //     scroll.destroy();
+  //   };
+  // }, []);
 
   return (
   
@@ -47,7 +47,6 @@ function App() {
           <Route path="/list" element={<ListProperty />}/>
           <Route path="/form" element={<Joinwaitlist />}/>
         </Routes>
-         <Sidenav/>
          {/* <Hero /> */}
          <Footer />
    </div>   
@@ -56,5 +55,6 @@ function App() {
 
   )
   }
+
 
 export default App;
