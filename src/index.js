@@ -1,7 +1,6 @@
 // import 'locomotive-scroll/dist/locomotive-scroll.min.css';
 import React from 'react';
 
-import { Route,Routes,Router } from 'react-router-dom';
 
 
 

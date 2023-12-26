@@ -17,7 +17,7 @@ import whatsapp from './images/WhatsApp.svg';
 import Subscribe from './components/Subscribe';
 import ListProperty from './components/ListProperty';
 import Hostel from './components/Hostel'
-import Joinwaitlist from './components/Joinwaitlist';
+
 
 function App() {
   // useEffect(() => {
@@ -45,7 +45,6 @@ function App() {
           <Route path="/subscribe" element={<Subscribe/>} />
           <Route path="/hostel" element={<Hostel />}/>
           <Route path="/list" element={<ListProperty />}/>
-          <Route path="/form" element={<Joinwaitlist />}/>
         </Routes>
          {/* <Hero /> */}
          <Footer />

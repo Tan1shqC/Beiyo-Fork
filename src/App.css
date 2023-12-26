@@ -245,6 +245,7 @@ h2{
   font-family: Poppins, sans-serif;
   margin: 0;
   /* margin-bottom: rem; */
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
@@ -260,7 +261,7 @@ h2{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 5rem;
 }
 
 .event p{
@@ -282,24 +283,26 @@ h2{
 .events{
   box-sizing: border-box;
   display: flex;
-  height: 22rem;
-  width: 22rem;
+  height: 20rem;
+  width: 20rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 1.5rem;
-  background-color: transparent;
+  background-color: rgb(255, 255, 255);
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
   /* padding-bottom: 2rem; */
   text-align: center;
   transition: 1s ease-in-out;
+  border: black solid 0.5px;
 }
 .events:hover{
-  height: 25rem;
-  width: 25rem;
+
+ transform: scale(1.2);
   transition: 1s ease-in-out;
+ 
 }
 
 .communemain{
@@ -372,6 +375,10 @@ margin: 0;
 
 
 @media (max-width: 412px){ 
+  .events{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
   .logo img{
     height: 40vw;
     width: 15vh;
@@ -421,6 +428,17 @@ margin: 0;
   width: 40vh;
   height: 31vw;
  } */
+.form{
+  padding: 0;
+}
+.formtextsection{
+    width: 100vw;  
+    margin: 0;
+}
+
+.bigdiv{
+  gap: 3rem;
+}
  .footercontent img{
   width: 40%;
   height: 40%;
@@ -464,7 +482,6 @@ margin: 0;
  .footer h3{
   text-align: left;
  }
-
  .footercontent{
   flex-direction: column;
   height: 100%;
@@ -501,7 +518,24 @@ margin: 0;
  section{
     padding-bottom: 0;
  }
- 
+ .formtextsection{
+    padding: 0;
+    width: 40vw;
+ }
+ .form input{
+  width: 70vw;
+ }
+ .form textarea{
+  width: 70vw;
+  height: 17vh;
+  resize: none;
+}
+.form select{
+  width: 20.5vw;
+  height: 5vh;
+}
+
+
 } 
 
 .sidenav{
@@ -515,16 +549,15 @@ margin: 0;
   padding: 0;
   margin: 0;
   padding-top: 10vh;
-  background-color: #232F3F;
+  background-color: #fffbfb;
   transition: 0.6s ease-in;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   gap: 20vh;
-  opacity: 0.9;
+  opacity: 0.8;
 }
-
 
 #openbtn{
   background-color: transparent;
@@ -549,7 +582,7 @@ margin: 0;
 .nav-item-mobile a{
   transition: 2s ease-in-out;
   /* color: black; */
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   word-spacing: 2%;
 }
@@ -562,92 +595,161 @@ margin: 0;
 }
 
 /* listyour property page */
+
+/* form */
+.form{
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formtextsection{
+  border: 2px solid transparent;
+  border-radius: 20px;
+  filter: drop-shadow(15px 3px 2px rgb(196, 196, 196));
+}
+
+.formtextsection{
+  background-color: rgb(255, 254, 254);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8vw;
+  margin-bottom: 0;
+  padding: 10vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+.formtextsection h1{
+  color: rgb(5, 5, 5);
+  text-align: center;
+  margin-bottom: 5vh;
+
+  font-size: 5vh;
+ 
+}
+
+.formtextsection form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  padding: 0vh;
+  gap: 1rem;
+}
+form input{
+  height: 5vh;
+  width: 20vw;
+}
+.form textarea{
+  width: 20vw;
+  height: 17vh;
+  resize: none;
+}
+.form select{
+  width: 20.5vw;
+  height: 5vh;
+}
+.form h3{
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+.form .checked{
+    height: 2vh;
+    width: 2vw;
+    display: flex;
+    margin: 0;
+}
+
+.formdivChecked{
+  display: flex;
+  justify-content: start;
+  gap:0rem;
+  align-items: center;
+}
+.formdivChecked p{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.form button{
+  height: 5vh;
+  width: 20vw;
+  border-radius: 10px;
+  border: none;
+  background-color: #232F3F;
+  color: white;
+}
+.form input:visited{
+  border: 1px red solid;
+}
+.form button:hover{
+  background-color: rgb(188, 183, 183);
+  color: black;
+} 
+/* faq */
+  .faqheading{
+    margin: 2vh 0;
+  }
+.faq{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 5vh;
+}
+.faqmain{
+  width:  80%;
+}
+.questions{
+  width: 100%;
+  height:8vh;
+  overflow: hidden;
+  padding: 0;
+}
+.minus{
+  display: none;
+}
+.questiondiv{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+.questiondiv p{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+.questions button{
+  background-color: transparent;
+  border:none; 
+}
+/* Hostl.css */
+
+.listing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.listing h1{
+  font-size: 20vw;
+}
+
+
+/* list */
 .listmain{
   height: 100vh;
-  width: 100%;
-  background-color: #EFF1EF;
-}
-/* form */
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  outline: none;
-}
-
-input[type=submit] {
-  background-color: #054c8b;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  
-  transition: all 1s;
-  align-self: center;
-  width: 25%;
-}
-
-input[type=submit]:hover {
-  background-color: #ffffff;
-  color: black;
-
-}
-form{
   display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* margin-left: 10%; */
-  /* margin-top: 5vh; */
-  height: 90vh;
-  /* border-radius: 2%; */
-  box-shadow: 0px 10px 10px #232f3f;
-  font-weight:bold;
-  background-color: transparent;
-  filter: blur(100%);
-  opacity: 90%;
   justify-content: center;
 }
-label{
-  color: #EFF1EF;
-  opacity: 0.9;
-}
-.container h3{
-  font-size:x-large;
-  color: #EFF1EF;
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* gap: 8vw; */
-    padding: 20vh;
-    height: 100vh;
-    background-image: url(images/formbg.jpg);
-    background-size: cover;
-}
-.box img{
-    height: 80vh;
-    margin-top: 7vh;
+.listmain h1{
+  font-size: 20vw;
 }
