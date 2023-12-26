@@ -2,7 +2,9 @@ import React from 'react'
 
 const Hostel = () => {
   return (
-    <div>Hostel</div>
+    <div className='listing'>
+      <h1>Comming soon</h1>
+    </div>
   )
 }
 

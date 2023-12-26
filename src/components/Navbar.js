@@ -4,7 +4,7 @@ import navicon from '../images/icons8-menu-50.png'
 import closeicon from '../images/icons8-close-50.png'
 import logo from '../images/main-yellow.png'
 import { Link } from 'react-router-dom'
-import Joinwaitlist from './Joinwaitlist'
+
 
 
 
@@ -17,10 +17,9 @@ function Navbar() {
        <ul className='navbar-content'>
      
        <li  className='nav-item'><Link to="/">Home</Link></li>
-       <li  className='nav-item'><Link to="/subscribe">Subscribe</Link></li>
        <li  className='nav-item'><Link to="/hostel">Hostel</Link></li>
        <li  className='nav-item'><Link to="/list">List</Link></li>
-       <li  className='nav-item'><Link to="/form">Joinwaitlist</Link></li>
+       <li  className='nav-item'><a href="/#form">Join our waitlist</a></li>
        </ul>
     </div>
     <div className='whatsapp'>
@@ -36,13 +35,11 @@ function Navbar() {
 <ul className='navbar-content-mobile'>
 <li className='nav-item-mobile'><a href="/">Home</a></li>
 <hr />
-<li className='nav-item-mobile'><a href="/subscribe">Subscribe</a></li>
-<hr />
 <li className='nav-item-mobile'><a href="/hostel">Hostel</a></li>
 <hr />
 <li className='nav-item-mobile'><a href="/list">List Your Properties</a></li>
 <hr />
-<li className='nav-item-mobile'><a href="/form">Join our waitlist</a></li>
+<li className='nav-item-mobile'><a href="/#form">Join out waitlist</a></li>
 <hr />
 </ul>
 <div className='whatsapp'>

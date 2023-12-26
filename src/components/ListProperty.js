@@ -4,8 +4,8 @@ const ListProperty = () => {
    <div>
      
   <div className="listmain">
+    <h1>Comming soon</h1>
 
-<h1>Hello</h1>
   </div>
    </div>
   )
