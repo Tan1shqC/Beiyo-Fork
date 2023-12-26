@@ -46,8 +46,15 @@ function Hero() {
     e.preventDefault();
 
     // Validate form fields
- 
-    
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+      occupancy: '',
+      agreeToTerms: false,
+    });
+    window.location.reload();
     if (!formData.agreeToTerms) {
       alert('You must agree to the terms and conditions');
     }
@@ -55,7 +62,6 @@ function Hero() {
       await axios.post('http://localhost:5000/submit-form', formData);
       console.log('Form submitted successfully');
       // Optionally, you can reset the form here
-      window.location.reload();
     } catch (error) {
       console.error('Error submitting form:', error);
     }
