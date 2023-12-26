@@ -88,29 +88,28 @@ function Hero() {
               <img src={broom} alt="" />
             </div>
             <h2 className="content ">Cleaning Services</h2>
-            <p>We're committed to ensuring cleanliness not just in individual rooms but throughout the entire hostel
-              building.</p>
+            <p>Elevate your living space with unparalleled cleanliness. Our commitment to hygiene ensures a pristine environment, creating a home that reflects your standards</p>
           </div>
           <div className=" events ">
             <div className="featureimg">
               <img src={water} alt="" />
             </div>
             <h2 className="content ">RO Water</h2>
-            <p>Get pure water whenever you need it! We have R.O. water available 24/7,just for you.</p>
+            <p>Indulge in pure refreshment with our advanced RO water feature. Quench your thirst for quality living – where clean water meets comfort</p>
           </div>
           <div className=" events">
             <div className="featureimg">
               <img src={wifi} alt="" />
             </div>
             <h2 className="content ">Wifi</h2>
-            <p>"Elevate your space effortlessly – our expert cleaning services redefine cleanliness on your terms."</p>
+            <p>Experience connectivity redefined with our high-speed Wi-Fi. Stay seamlessly connected in the heart of comfort.</p>
           </div>
           <div className=" events">
             <div className="featureimg">
               <img src={lanundary} alt="" />
             </div>
             <h2 className="content ">Doorstep Laundary</h2>
-            <p>"Carefree cleanliness at your doorstep – 24/7 laundry services, just a call away!"</p>
+            <p>Carefree cleanliness at your doorstep – 24/7 laundry services, just a call away!</p>
           </div>
           <div className=" events">
             <div className="featureimg">
