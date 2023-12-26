@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import whatsapp from './images/WhatsApp.svg';
 
 
-import Subscribe from './components/Subscribe';
+
 import ListProperty from './components/ListProperty';
 import Hostel from './components/Hostel'
 
@@ -42,7 +42,6 @@ function App() {
           <Navbar />
           <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/subscribe" element={<Subscribe/>} />
           <Route path="/hostel" element={<Hostel />}/>
           <Route path="/list" element={<ListProperty />}/>
         </Routes>
