@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB (replace 'your_mongodb_uri' with your actual MongoDB URI)
-mongoose.connect('mongodb+srv://beiyowork:PjP0Jhpz0XCStQgY@beiyocustomers.0h5hffr.mongodb.net/', {
+mongoose.connect('mongodb+srv://vercel-admin-user:s1EoUSRCEaWwTX0k@beiyocustomers.0h5hffr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
