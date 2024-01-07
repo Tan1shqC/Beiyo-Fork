@@ -19,6 +19,7 @@ function Navbar() {
        <li  className='nav-item'><Link to="/">Home</Link></li>
        <li  className='nav-item'><Link to="/hostel">Hostel</Link></li>
        <li  className='nav-item'><Link to="/list">List</Link></li>
+       <a href="image_location.zip" download>List Your Building</a>
        <li  className='nav-item'><a href="/#form">Join our waitlist</a></li>
        </ul>
     </div>
