@@ -185,7 +185,7 @@ function Hero() {
       modules={[ Scrollbar]}
       spaceBetween={0}
       slidesPerView={3.5}
-      scrollbar={{ draggable: true ,
+      scrollbar={{ 
         el: ".swiper-scrollbar",
         hide: true,  
     }}
@@ -194,7 +194,7 @@ function Hero() {
 </p>
     <h6>Deepak Sharma</h6>
       </SwiperSlide>
-      <SwiperSlide><p>"I'm thoroughly impressed with the cleanliness and hygiene of this hostel. The facilities are top-notch, and the staff is warm and accommodating. Spacious rooms, reliable water supply, excellent Wi-Fi—truly a student's haven!"
+      <SwiperSlide><p>"Clean, spacious, and equipped with excellent facilities, this hostel is a gem. The reliable water supply, excellent Wi-Fi, and attentive staff contribute to a positive living experience for students. Highly recommended!"
 </p>
     <h6>Abhishek Goyal</h6></SwiperSlide>
       <SwiperSlide><p>"Choosing this hostel was a great decision! The cleanliness is exceptional, and the spacious rooms are a delight. The reliable water supply, excellent Wi-Fi, and modern facilities enhance the overall student experience."
@@ -208,10 +208,9 @@ function Hero() {
     <SwiperSlide><p>"This hostel is a cleanliness paradise! From spacious rooms to reliable water supply and excellent Wi-Fi, every aspect is well-maintained. The friendly staff adds to the positive living experience for students."
 </p>
     <h6>Harsh Jain</h6></SwiperSlide>
-     <SwiperSlide><p>"Clean, spacious, and equipped with excellent facilities, this hostel is a gem. The reliable water supply, excellent Wi-Fi, and attentive staff contribute to a positive living experience for students. Highly recommended!"
-</p>
-    <h6>Ashutosh Tignath</h6></SwiperSlide>
+    <SwiperSlide></SwiperSlide>
     </Swiper>  
+
       </div>
         </div>
 
