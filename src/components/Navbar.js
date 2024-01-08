@@ -18,9 +18,7 @@ function Navbar() {
      
        <li  className='nav-item'><Link to="/">Home</Link></li>
        <li  className='nav-item'><Link to="/hostel">Hostel</Link></li>
-       
-    <li  className='nav-item'><a href="list_form.pdf" download>List Your Building</a></li>
-       
+       <li  className='nav-item'><a href="/list_form.pdf" download="list-form.pdf">List Your Building</a></li>
        <li  className='nav-item'><a href="/#form">Join our waitlist</a></li>
        </ul>
     </div>
@@ -39,7 +37,7 @@ function Navbar() {
 <hr />
 <li className='nav-item-mobile'><a href="/hostel">Hostel</a></li>
 <hr />
-<li className='nav-item-mobile'><a href="/list">List Your Properties</a></li>
+<li className='nav-item-mobile'><a href="/list_form.pdf" download="list-form.pdf">List Your Building</a></li>
 <hr />
 <li className='nav-item-mobile'><a href="/#form">Join out waitlist</a></li>
 <hr />

@@ -12,9 +12,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import whatsapp from './images/WhatsApp.svg';
-
-
-
 import ListProperty from './components/ListProperty';
 import Hostel from './components/Hostel'
 

@@ -1,5 +1,5 @@
 *{
-
+  /* font-family: Poppins, sans-serif; */
   font-family: 'Gilda Display', serif;
   color: black;
   font-size: 2.5vh;
@@ -725,6 +725,10 @@ form input{
   margin: 0;
   padding: 0;
   font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+.answerdiv{
+  font-family: Poppins, sans-serif;
 }
 .questions button{
   background-color: transparent;
@@ -753,3 +757,50 @@ form input{
 .listmain h1{
   font-size: 20vw;
 }
+.testimonial{
+  min-height: 50vh;
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.testimonial h1{
+  font-size: 3vw;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+}
+.swipersection{
+  margin-top: 4vw;
+ 
+}
+.swiper{
+  width: 100%;
+  display: flex;
+}
+.swiper-scrollbar{
+  display: none;
+}
+.swiper:hover{
+  cursor: grab;
+}
+
+.swiper-slide {
+      height: auto;
+      padding: 0 2vw;
+      padding-right: 4vw;
+      border-left: 1px solid black;
+      display: inline-block;
+}
+.swiper-slide p{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  width: 70%;
+}
+.swiper-slide h6{
+  font-family: Poppins, sans-serif;
+}
+.swiper-slide:nth-child(1){
+  margin-left: 3vw;
+}
+
+

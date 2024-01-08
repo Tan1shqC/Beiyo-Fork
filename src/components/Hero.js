@@ -8,12 +8,16 @@ import emergency from '../images/24-hour-service.png'
 import community from '../images/group-users.png'
 import plus from '../images/plus-solid.svg'
 import minus from '../images/minus-solid.svg'
-
-
+import 'swiper/css/bundle';
+import { Scrollbar } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/scrollbar';
 
 function Hero() {
-  // use effect
 
+
+  // use effect
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -109,7 +113,7 @@ function Hero() {
               <img src={lanundary} alt="" />
             </div>
             <h2 className="content ">Doorstep Laundary</h2>
-            <p>Carefree cleanliness at your doorstep – 24/7 laundry services, just a call away!</p>
+            <p>"Carefree cleanliness at your doorstep – 24/7 laundry services, just a call away!"</p>
           </div>
           <div className=" events">
             <div className="featureimg">
@@ -170,6 +174,47 @@ function Hero() {
             </form>
           </div>
       </div>
+
+      <div className='testimonial'>
+        <h1>
+        TESTIMONIAL
+        </h1>
+        <div className="swipersection">
+        <Swiper
+      // install Swiper modules
+      modules={[ Scrollbar]}
+      spaceBetween={0}
+      slidesPerView={3.5}
+      scrollbar={{ draggable: true ,
+        el: ".swiper-scrollbar",
+        hide: true,  
+    }}
+    >
+      <SwiperSlide><p>"I'm thoroughly impressed with the cleanliness and hygiene of this hostel. The facilities are top-notch, and the staff is warm and accommodating. Spacious rooms, reliable water supply, excellent Wi-Fi—truly a student's haven!"
+</p>
+    <h6>Deepak Sharma</h6>
+      </SwiperSlide>
+      <SwiperSlide><p>"I'm thoroughly impressed with the cleanliness and hygiene of this hostel. The facilities are top-notch, and the staff is warm and accommodating. Spacious rooms, reliable water supply, excellent Wi-Fi—truly a student's haven!"
+</p>
+    <h6>Abhishek Goyal</h6></SwiperSlide>
+      <SwiperSlide><p>"Choosing this hostel was a great decision! The cleanliness is exceptional, and the spacious rooms are a delight. The reliable water supply, excellent Wi-Fi, and modern facilities enhance the overall student experience."
+</p>
+    <h6>Shivam Gupta</h6></SwiperSlide>
+      <SwiperSlide><p> "I can't speak highly enough about the cleanliness and facilities at this hostel. Spacious, well-maintained rooms, reliable water supply, excellent Wi-Fi—all complemented by a friendly staff. A fantastic choice for any student."</p>
+    <h6>Madhur Jain</h6></SwiperSlide>
+    <SwiperSlide><p> "Cleanliness is a priority here, and it shows! The spacious rooms, reliable water supply, and excellent Wi-Fi are standout features. The staff is attentive, making this hostel a top pick for students."
+</p>
+    <h6>Mukul Gupta</h6></SwiperSlide>
+    <SwiperSlide><p>"This hostel is a cleanliness paradise! From spacious rooms to reliable water supply and excellent Wi-Fi, every aspect is well-maintained. The friendly staff adds to the positive living experience for students."
+</p>
+    <h6>Harsh Jain</h6></SwiperSlide>
+     <SwiperSlide><p>"Clean, spacious, and equipped with excellent facilities, this hostel is a gem. The reliable water supply, excellent Wi-Fi, and attentive staff contribute to a positive living experience for students. Highly recommended!"
+</p>
+    <h6>Ashutosh Tignath</h6></SwiperSlide>
+    </Swiper>  
+      </div>
+        </div>
+
       <h2 className='faqheading'>FAQS</h2>
       <div className="faq">
 
