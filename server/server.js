@@ -41,3 +41,7 @@ app.post('/submit-form', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+mongoose.connection.on('open', () => {
+  console.log("Connected to MongoDB");
+});
